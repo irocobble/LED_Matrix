@@ -4379,6 +4379,226 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Simulation_SPICE:PNP"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at -2.54 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PNP"
+				(at -2.54 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 35.56 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+				(at 35.56 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Device" "PNP"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Type" "GUMMELPOON"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=C 2=B 3=E"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "simulation"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PNP_0_1"
+				(polyline
+					(pts
+						(xy -2.54 0) (xy 0.635 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 1.905) (xy 0.635 -1.905) (xy 0.635 -1.905)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0.635) (xy 2.54 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 -0.635) (xy 2.54 -2.54) (xy 2.54 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 1.27 0)
+					(radius 2.8194)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778) (xy 2.286 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "PNP_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at 2.54 5.08 270)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_emitter line
+					(at 2.54 -5.08 90)
+					(length 2.54)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_SPST"
 			(pin_names
 				(offset 0)
@@ -5307,12 +5527,6 @@
 		(uuid "42aae7f5-572f-4c27-bccd-6f178d786cd9")
 	)
 	(junction
-		(at 82.55 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "435884a0-5e84-47ec-bd0a-d441c8b3e878")
-	)
-	(junction
 		(at 156.21 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5547,12 +5761,6 @@
 		(uuid "8a0d3cd9-f540-453c-80be-650cac445597")
 	)
 	(junction
-		(at 217.17 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b5ba3ac-7479-45d6-a386-ea18a9aed228")
-	)
-	(junction
 		(at 351.79 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5691,6 +5899,12 @@
 		(uuid "b0469585-b83f-415f-93da-601e1a67285a")
 	)
 	(junction
+		(at 82.55 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b320a161-eeba-4dde-8c4e-5d22b1e357c9")
+	)
+	(junction
 		(at 217.17 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5797,6 +6011,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d503453f-2baa-4fdd-bd3e-d156c44efd7c")
+	)
+	(junction
+		(at 217.17 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5bb935a-b168-45f8-b8b1-e1b3e533160f")
 	)
 	(junction
 		(at 97.79 93.98)
@@ -5927,6 +6147,26 @@
 			(type default)
 		)
 		(uuid "00896d25-a7a8-42bf-9dd9-0dbdce946278")
+	)
+	(wire
+		(pts
+			(xy 82.55 163.83) (xy 82.55 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "014b5d19-47ac-41e5-80f4-6d69054eda63")
+	)
+	(wire
+		(pts
+			(xy 243.84 88.9) (xy 241.3 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "01e776d9-123a-4580-a630-099e293fa686")
 	)
 	(wire
 		(pts
@@ -6097,6 +6337,16 @@
 			(type default)
 		)
 		(uuid "0eaeea6d-9dde-4dde-91ad-d5988abb77cd")
+	)
+	(wire
+		(pts
+			(xy 109.22 163.83) (xy 109.22 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ec5cfe9-596d-4c3c-be55-1cd6dd6891e2")
 	)
 	(wire
 		(pts
@@ -6390,6 +6640,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 88.9) (xy 233.68 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23e0fc5c-293d-4161-b207-95a8f594aecd")
+	)
+	(wire
+		(pts
 			(xy 317.5 207.01) (xy 328.93 207.01)
 		)
 		(stroke
@@ -6397,6 +6657,26 @@
 			(type default)
 		)
 		(uuid "2409f7b9-d494-44b2-a58b-7e8e45d7f200")
+	)
+	(wire
+		(pts
+			(xy 156.21 163.83) (xy 156.21 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "240f36e5-d640-4e56-8c9a-115420844edc")
+	)
+	(wire
+		(pts
+			(xy 236.22 101.6) (xy 233.68 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24371866-5e7c-4464-b2f8-efb65ca5ba5a")
 	)
 	(wire
 		(pts
@@ -6860,16 +7140,6 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 129.54) (xy 82.55 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "466fcf22-d6d8-4b34-a466-74bb3fd5e9d7")
-	)
-	(wire
-		(pts
 			(xy 368.3 33.02) (xy 368.3 36.83)
 		)
 		(stroke
@@ -6960,6 +7230,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 129.54) (xy 241.3 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c4086cb-9b4b-4a31-8362-b4ac65b0b65d")
+	)
+	(wire
+		(pts
 			(xy 354.33 36.83) (xy 368.3 36.83)
 		)
 		(stroke
@@ -6997,6 +7277,16 @@
 			(type default)
 		)
 		(uuid "4efb30ff-2bdf-4703-8979-5c1301e73a47")
+	)
+	(wire
+		(pts
+			(xy 134.62 163.83) (xy 134.62 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51077e85-6058-4dc7-991b-e14efa315def")
 	)
 	(wire
 		(pts
@@ -7120,6 +7410,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 63.5) (xy 233.68 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "573eaf02-9ec0-4f12-882a-79a6393ec26d")
+	)
+	(wire
+		(pts
 			(xy 72.39 213.36) (xy 72.39 210.82)
 		)
 		(stroke
@@ -7190,6 +7490,16 @@
 	)
 	(wire
 		(pts
+			(xy 196.85 163.83) (xy 196.85 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ae703a3-ad51-45c7-bf40-c0635435f463")
+	)
+	(wire
+		(pts
 			(xy 82.55 50.8) (xy 82.55 38.1)
 		)
 		(stroke
@@ -7227,6 +7537,16 @@
 			(type default)
 		)
 		(uuid "5ea18402-5333-4b1a-87de-b1232abc11c2")
+	)
+	(wire
+		(pts
+			(xy 236.22 76.2) (xy 233.68 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f119bce-7f0b-4b43-b1d3-21a4b00e0ad3")
 	)
 	(wire
 		(pts
@@ -7290,6 +7610,16 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 163.83) (xy 217.17 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63de634a-abd5-4c58-897f-dc6103d2ff81")
+	)
+	(wire
+		(pts
 			(xy 313.69 95.25) (xy 326.39 95.25)
 		)
 		(stroke
@@ -7347,6 +7677,16 @@
 			(type default)
 		)
 		(uuid "66767664-ef28-4277-9b5b-601e732b5ce7")
+	)
+	(wire
+		(pts
+			(xy 55.88 163.83) (xy 55.88 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66cf9636-0227-4d40-bb68-e3a5462a55bb")
 	)
 	(wire
 		(pts
@@ -7740,6 +8080,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 38.1) (xy 241.3 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8456a198-5320-4c33-b51f-194a6a4ab909")
+	)
+	(wire
+		(pts
 			(xy 71.12 63.5) (xy 71.12 68.58)
 		)
 		(stroke
@@ -7850,6 +8200,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 38.1) (xy 233.68 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c2a8134-24db-492e-9162-07706d3f2f89")
+	)
+	(wire
+		(pts
 			(xy 193.04 114.3) (xy 196.85 114.3)
 		)
 		(stroke
@@ -7930,6 +8290,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 101.6) (xy 241.3 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9406c470-1877-49f9-97fa-552a2e0f9cab")
+	)
+	(wire
+		(pts
 			(xy 217.17 101.6) (xy 217.17 88.9)
 		)
 		(stroke
@@ -7957,6 +8327,16 @@
 			(type default)
 		)
 		(uuid "94f440ae-6958-42d3-8bb8-4159d301226d")
+	)
+	(wire
+		(pts
+			(xy 243.84 76.2) (xy 241.3 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a55ce8d-f1bb-4e37-ab22-edeecd47ec1b")
 	)
 	(wire
 		(pts
@@ -8280,6 +8660,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 139.7) (xy 82.55 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0d223d8-340f-4ae0-aa54-0797769dbb76")
+	)
+	(wire
+		(pts
 			(xy 78.74 129.54) (xy 82.55 129.54)
 		)
 		(stroke
@@ -8370,6 +8760,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 63.5) (xy 241.3 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96e88a4-1734-4ca9-a0f5-1a4792dbf5f8")
+	)
+	(wire
+		(pts
 			(xy 295.91 204.47) (xy 288.29 204.47)
 		)
 		(stroke
@@ -8417,16 +8817,6 @@
 			(type default)
 		)
 		(uuid "bc8746f9-47d6-41e3-8fcd-40e23fecaac5")
-	)
-	(wire
-		(pts
-			(xy 217.17 129.54) (xy 217.17 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcf10245-2d97-4baa-a4f0-d4bc0cc82da7")
 	)
 	(wire
 		(pts
@@ -8667,6 +9057,16 @@
 			(type default)
 		)
 		(uuid "c9642e30-e8a4-4e96-b87a-d3b139a241c1")
+	)
+	(wire
+		(pts
+			(xy 243.84 114.3) (xy 241.3 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb95c005-5c64-4e1c-91b9-52ca9c1b854f")
 	)
 	(wire
 		(pts
@@ -8930,6 +9330,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 114.3) (xy 233.68 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df42f6cc-4b3b-411b-9d55-5a113ccbb1c2")
+	)
+	(wire
+		(pts
 			(xy 346.71 144.78) (xy 345.44 144.78)
 		)
 		(stroke
@@ -8990,6 +9400,16 @@
 	)
 	(wire
 		(pts
+			(xy 236.22 50.8) (xy 233.68 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e38c611b-efb7-42dd-8a80-404f32a3d702")
+	)
+	(wire
+		(pts
 			(xy 123.19 68.58) (xy 144.78 68.58)
 		)
 		(stroke
@@ -9020,6 +9440,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 50.8) (xy 241.3 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e543fbb6-ac78-499a-8f87-bd2076be0259")
+	)
+	(wire
+		(pts
 			(xy 130.81 76.2) (xy 134.62 76.2)
 		)
 		(stroke
@@ -9037,6 +9467,16 @@
 			(type default)
 		)
 		(uuid "e5ec5e84-ac00-4499-bb97-e342fc205096")
+	)
+	(wire
+		(pts
+			(xy 176.53 163.83) (xy 176.53 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e659eaaf-109b-4783-ab15-3a5c36f7d483")
 	)
 	(wire
 		(pts
@@ -9300,6 +9740,26 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 129.54) (xy 217.17 138.43)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5f67aee-7676-4447-b567-9e818d4a180d")
+	)
+	(wire
+		(pts
+			(xy 236.22 129.54) (xy 233.68 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6306664-fe47-4ad5-a729-5892c3ff6258")
+	)
+	(wire
+		(pts
 			(xy 313.69 130.81) (xy 326.39 130.81)
 		)
 		(stroke
@@ -9429,7 +9889,7 @@
 		(uuid "107d2b93-5586-4de7-aabc-0ebc2f0dde9b")
 	)
 	(label "G_8"
-		(at 233.68 129.54 0)
+		(at 243.84 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9449,7 +9909,7 @@
 		(uuid "16e80a96-a7a0-40e9-9e47-6f2178b5fb6d")
 	)
 	(label "G_6"
-		(at 233.68 101.6 0)
+		(at 243.84 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9459,7 +9919,7 @@
 		(uuid "1bbd8fb4-e02d-467c-98cf-6dd28ca429ff")
 	)
 	(label "G_3"
-		(at 233.68 63.5 0)
+		(at 243.84 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9499,7 +9959,7 @@
 		(uuid "27889746-227b-488a-ae4e-db6f5c968f06")
 	)
 	(label "P_6"
-		(at 171.45 147.32 0)
+		(at 176.53 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9519,7 +9979,7 @@
 		(uuid "3fd04bea-561e-4515-9920-ca55a6b09f59")
 	)
 	(label "G_7"
-		(at 233.68 114.3 0)
+		(at 243.84 114.3 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9539,7 +9999,7 @@
 		(uuid "4d9d3923-f283-4bbe-9570-cd563d29877e")
 	)
 	(label "P_1"
-		(at 50.8 147.32 0)
+		(at 55.88 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9569,7 +10029,7 @@
 		(uuid "6269768c-1fd2-43a5-b20d-dc9ab4c17df1")
 	)
 	(label "G_5"
-		(at 233.68 88.9 0)
+		(at 243.84 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9599,7 +10059,7 @@
 		(uuid "8b52e426-160d-46fb-b9db-d7c5775a4d67")
 	)
 	(label "P_2"
-		(at 77.47 147.32 0)
+		(at 82.55 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9619,7 +10079,7 @@
 		(uuid "96e81bc4-abf2-4cb9-90fd-2bff5ad9458d")
 	)
 	(label "P_8"
-		(at 212.09 147.32 0)
+		(at 217.17 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9649,7 +10109,7 @@
 		(uuid "a64ae05b-0060-4144-933b-8d13ff600d3f")
 	)
 	(label "P_5"
-		(at 151.13 147.32 0)
+		(at 156.21 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9659,7 +10119,7 @@
 		(uuid "ad446562-ae60-4a13-a3bd-2017b512baaa")
 	)
 	(label "G_1"
-		(at 233.68 38.1 0)
+		(at 243.84 38.1 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9689,7 +10149,7 @@
 		(uuid "b390c3c4-8c0e-4da0-ac57-a2e934049858")
 	)
 	(label "G_2"
-		(at 233.68 50.8 0)
+		(at 243.84 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9709,7 +10169,7 @@
 		(uuid "c2692a55-676a-4c52-9273-a92223a6b457")
 	)
 	(label "G_4"
-		(at 233.68 76.2 0)
+		(at 243.84 76.2 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9729,7 +10189,7 @@
 		(uuid "c8c9041e-43f7-4e52-b262-699dbcbd41e3")
 	)
 	(label "P_4"
-		(at 129.54 147.32 0)
+		(at 134.62 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9749,7 +10209,7 @@
 		(uuid "d18e326e-96b2-4494-b3fb-cff421a0c68f")
 	)
 	(label "P_7"
-		(at 191.77 147.32 0)
+		(at 196.85 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9789,7 +10249,7 @@
 		(uuid "ef9e1090-56c5-4d94-a71e-10a452c9c799")
 	)
 	(label "P_3"
-		(at 104.14 147.32 0)
+		(at 109.22 163.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10227,6 +10687,74 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "03cebe77-90f6-4ae3-906d-c6b6543d323b")
+		(property "Reference" "R12"
+			(at 238.76 124.46 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 127 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6ac4215a-84a1-4bed-960b-2abdbc5e842c")
+		)
+		(pin "2"
+			(uuid "e131e588-1fc2-41a6-84c2-735d06a24783")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R12")
 					(unit 1)
 				)
 			)
@@ -10865,80 +11393,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 212.09 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a9050b1-ab13-4e6e-882e-944c7b5880f7")
-		(property "Reference" "Q8"
-			(at 212.09 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 212.09 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 213.995 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 212.09 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 212.09 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "da4d9064-d7b9-4992-8271-1e94d66a2101")
-		)
-		(pin "1"
-			(uuid "000afb92-b0d6-4767-ab5f-9ba95a0c9086")
-		)
-		(pin "3"
-			(uuid "774ec392-9a53-4031-a483-3ae0c5bfba4e")
-		)
-		(instances
-			(project "Elo_112"
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small")
 		(at 231.14 204.47 0)
 		(unit 1)
@@ -11086,6 +11540,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 158.75 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0dd3bc3e-4851-4671-82f3-58a415145c72")
+		(property "Reference" "Q5"
+			(at 153.67 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 153.67 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 123.19 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 123.19 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 158.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 158.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 158.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 158.75 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2f97a31a-cba4-4148-86c7-73c50f91d573")
+		)
+		(pin "3"
+			(uuid "7ea4ebec-3f18-4159-b9d6-c11804669c26")
+		)
+		(pin "1"
+			(uuid "03c0cb26-64d7-4461-901d-dcb947fbd357")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 101.6 129.54 0)
 		(unit 1)
@@ -11164,7 +11718,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 186.69 139.7 90)
+		(at 204.47 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11172,7 +11726,7 @@
 		(dnp no)
 		(uuid "10308132-1c27-4b0e-9174-ae5775cedde2")
 		(property "Reference" "#PWR07"
-			(at 190.5 139.7 0)
+			(at 200.66 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11181,7 +11735,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 182.118 139.7 0)
+			(at 209.042 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11189,7 +11743,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 186.69 139.7 0)
+			(at 204.47 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11198,7 +11752,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 186.69 139.7 0)
+			(at 204.47 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11207,7 +11761,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 186.69 139.7 0)
+			(at 204.47 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11513,6 +12067,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 156.21 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "197e6342-1c84-4dec-a0c8-46f94fb85306")
+		(property "Reference" "R16"
+			(at 158.75 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 158.75 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 156.21 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 156.21 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 156.21 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "071eab75-1840-4497-904e-f15877ce8c88")
+		)
+		(pin "2"
+			(uuid "a235fc62-a7bd-4a81-9f9b-bdf5ababba99")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 193.04 213.36 0)
 		(unit 1)
@@ -11573,6 +12197,106 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "#PWR070")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 199.39 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1d65f7a9-d942-4884-b312-001399267958")
+		(property "Reference" "Q7"
+			(at 194.31 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 194.31 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 163.83 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 163.83 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 199.39 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f777f658-9a32-4927-a191-75bb72b71b64")
+		)
+		(pin "3"
+			(uuid "257e072e-48dc-4d3d-b549-e63b16532726")
+		)
+		(pin "1"
+			(uuid "8abc60c9-7e39-4002-bbf8-0305504892f8")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -11792,54 +12516,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 77.47 142.24 90)
+		(lib_id "Device:R_Small")
+		(at 238.76 88.9 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "235cba92-0cb9-4bba-a1c9-e683316b3e35")
-		(property "Reference" "Q2"
-			(at 77.47 133.35 90)
+		(uuid "21a69e74-6b67-4db8-a7c5-0e89a9426951")
+		(property "Reference" "R9"
+			(at 238.76 83.82 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 86.36 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "MMBT2222A"
-			(at 77.47 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 79.375 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 77.47 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 77.47 142.24 0)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11847,19 +12550,34 @@
 				(hide yes)
 			)
 		)
-		(pin "2"
-			(uuid "46e21d38-fa5f-45d9-8f15-f50c2a258451")
+		(property "Datasheet" "~"
+			(at 238.76 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "288ce3cf-766a-4f94-8e4a-4df55c3e4a51")
+			(uuid "bdc21e8c-da32-4a01-86e0-a1ea580f24cf")
 		)
-		(pin "3"
-			(uuid "8ac4b4b8-1d9e-4348-956b-cc2cd0f7cccf")
+		(pin "2"
+			(uuid "3def3fac-c953-4444-9c2e-41865b38ab1c")
 		)
 		(instances
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q2")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12212,6 +12930,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 76.2 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "288ca030-784b-404d-8eaa-808efe43c99d")
+		(property "Reference" "R8"
+			(at 238.76 71.12 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "07d316ad-e77c-466a-9d2b-c1d43e388b9a")
+		)
+		(pin "2"
+			(uuid "3f9d0f89-76e8-451f-886a-6253c746a309")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 332.74 39.37 0)
 		(unit 1)
@@ -12283,7 +13069,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 99.06 139.7 90)
+		(at 116.84 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12291,7 +13077,7 @@
 		(dnp no)
 		(uuid "2bc1193b-c698-4fbf-9f8a-48df9c5dbe98")
 		(property "Reference" "#PWR03"
-			(at 102.87 139.7 0)
+			(at 113.03 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12300,7 +13086,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 94.488 139.7 0)
+			(at 121.412 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12308,7 +13094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 99.06 139.7 0)
+			(at 116.84 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12317,7 +13103,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 139.7 0)
+			(at 116.84 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12326,7 +13112,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 99.06 139.7 0)
+			(at 116.84 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12560,6 +13346,74 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "Q16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d9343f2-e6ad-4c31-b21e-7d76050b905a")
+		(property "Reference" "R10"
+			(at 238.76 96.52 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "334ce01c-59f1-41a3-a3f9-d54b47276e49")
+		)
+		(pin "2"
+			(uuid "f7d6b19e-feb6-4cd0-92c0-5d5dea19e25d")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -13102,80 +13956,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 104.14 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "35bed67d-359f-4e5b-a8d7-5c7e68c79b70")
-		(property "Reference" "Q3"
-			(at 104.14 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 104.14 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 106.045 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 104.14 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0224fa06-2c22-4333-89ef-0ea9fd4204c2")
-		)
-		(pin "1"
-			(uuid "99abc171-93b7-4807-a52f-20c3ed516d6b")
-		)
-		(pin "3"
-			(uuid "9b3e9cee-7bb6-4147-b323-cb2614147485")
-		)
-		(instances
-			(project "Elo_112"
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 193.04 208.28 0)
 		(unit 1)
@@ -13240,6 +14020,74 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "C22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "379b0b2d-d503-4fdf-86fe-b01b514cbd65")
+		(property "Reference" "R7"
+			(at 238.76 58.42 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "46811c6e-d6c3-4155-b4af-a9333b83d0da")
+		)
+		(pin "2"
+			(uuid "8f624cd6-156d-41af-83f3-f5225d44e4b0")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -13547,6 +14395,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 134.62 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3baa1adb-0800-4d47-83dd-30979a09fd38")
+		(property "Reference" "R17"
+			(at 137.16 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 137.16 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 134.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 134.62 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "93b3e1e6-f88d-4998-ab28-5dd5712f575f")
+		)
+		(pin "2"
+			(uuid "d90e0e82-a097-4a77-ac95-51e2b6bae533")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 148.59 63.5 0)
 		(unit 1)
@@ -13778,6 +14696,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 109.22 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c56f0ba-96e4-4d97-9429-aec0eb550795")
+		(property "Reference" "R18"
+			(at 111.76 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 111.76 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 109.22 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "03f1ef39-a0dc-4555-856b-8eeb63da9470")
+		)
+		(pin "2"
+			(uuid "ddc5ab1f-aba2-4824-99c7-6cb8a221e40b")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 127 63.5 0)
 		(unit 1)
@@ -13856,7 +14844,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 146.05 139.7 90)
+		(at 163.83 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13864,7 +14852,7 @@
 		(dnp no)
 		(uuid "42c2bc2a-cbb9-477a-9bca-990d31bdf70e")
 		(property "Reference" "#PWR05"
-			(at 149.86 139.7 0)
+			(at 160.02 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13873,7 +14861,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 141.478 139.7 0)
+			(at 168.402 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13881,7 +14869,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 146.05 139.7 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13890,7 +14878,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 146.05 139.7 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13899,7 +14887,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 146.05 139.7 0)
+			(at 163.83 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13987,7 +14975,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 124.46 139.7 90)
+		(at 142.24 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13995,7 +14983,7 @@
 		(dnp no)
 		(uuid "4553ff85-992a-45a8-b47c-430ea850b5a6")
 		(property "Reference" "#PWR04"
-			(at 128.27 139.7 0)
+			(at 138.43 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14004,7 +14992,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 119.888 139.7 0)
+			(at 146.812 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14012,7 +15000,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 124.46 139.7 0)
+			(at 142.24 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14021,7 +15009,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 124.46 139.7 0)
+			(at 142.24 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14030,7 +15018,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 124.46 139.7 0)
+			(at 142.24 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14319,6 +15307,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 85.09 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e51515a-c548-42e1-8e07-46a5599fd1dd")
+		(property "Reference" "Q2"
+			(at 80.01 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 80.01 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 49.53 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 49.53 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 85.09 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54b4f71f-0b80-428f-8495-79cc6b613af8")
+		)
+		(pin "3"
+			(uuid "4d39e665-2375-4cf7-8739-6406e8bc38f8")
+		)
+		(pin "1"
+			(uuid "a4199b6f-810f-4ee2-bce9-32c6110b72f9")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 104.14 232.41 0)
 		(unit 1)
@@ -14455,6 +15543,76 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "Q10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 196.85 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "51887159-e17e-47c7-aef5-42d52572a865")
+		(property "Reference" "R14"
+			(at 199.39 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 199.39 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 196.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 196.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 196.85 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "924794b7-eccf-4382-ac7a-b9742d88f1e0")
+		)
+		(pin "2"
+			(uuid "c44c320a-c90a-42ed-920d-7fe1f8073287")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -15201,7 +16359,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 207.01 139.7 90)
+		(at 224.79 148.59 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15209,7 +16367,7 @@
 		(dnp no)
 		(uuid "62bf2595-e2ec-4f9f-9dcd-7b85d848346c")
 		(property "Reference" "#PWR08"
-			(at 210.82 139.7 0)
+			(at 220.98 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15218,7 +16376,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 202.438 139.7 0)
+			(at 229.362 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15226,7 +16384,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 207.01 139.7 0)
+			(at 224.79 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15235,7 +16393,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 207.01 139.7 0)
+			(at 224.79 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15244,7 +16402,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 207.01 139.7 0)
+			(at 224.79 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15415,6 +16573,176 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "D52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 217.17 140.97 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68072dd2-887c-4c98-870b-82224ca9fb69")
+		(property "Reference" "R13"
+			(at 219.71 139.6999 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 219.71 142.2399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 217.17 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 217.17 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8f8d241-5195-4f53-8325-39a986ce7346")
+		)
+		(pin "2"
+			(uuid "d461252b-f2fb-4040-90fe-bd27efa92e9f")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 137.16 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "681141e0-9648-41bd-bc5b-9b61973c12bf")
+		(property "Reference" "Q4"
+			(at 132.08 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 132.08 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 101.6 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 101.6 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 137.16 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "df88fdbe-8f72-4c08-be1e-a8e7f59aa3e7")
+		)
+		(pin "3"
+			(uuid "2cc01fd9-a9a2-4043-8d19-3033ffde4d34")
+		)
+		(pin "1"
+			(uuid "cc84e9fe-0c61-4b64-8d22-a7226caeb86a")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -15852,6 +17180,106 @@
 			(project ""
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 58.42 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bf68289-a324-44c2-8dd3-e9f38f7a2478")
+		(property "Reference" "Q1"
+			(at 53.34 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 53.34 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 22.86 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 22.86 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 58.42 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "76923d12-bdf7-4167-adc2-fc4d75be730d")
+		)
+		(pin "3"
+			(uuid "e72e331d-0568-4f1f-a54c-a96b760fb478")
+		)
+		(pin "1"
+			(uuid "625c2136-9041-4bd8-ad3f-91b9a92579ac")
+		)
+		(instances
+			(project ""
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -16426,6 +17854,74 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 114.3 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74507890-42ee-452b-be81-7d3821841bc3")
+		(property "Reference" "R11"
+			(at 238.76 109.22 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0c06d250-9cb2-48e6-b424-41b431547d5b")
+		)
+		(pin "2"
+			(uuid "0e4ded7a-302a-4950-a17e-5866cb9bfaa4")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R11")
 					(unit 1)
 				)
 			)
@@ -17045,7 +18541,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 45.72 139.7 90)
+		(at 63.5 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -17053,7 +18549,7 @@
 		(dnp no)
 		(uuid "80cf8973-8119-4abc-a8fa-438a2f832f89")
 		(property "Reference" "#PWR01"
-			(at 49.53 139.7 0)
+			(at 59.69 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17062,7 +18558,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 41.148 139.7 0)
+			(at 68.072 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17070,7 +18566,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 45.72 139.7 0)
+			(at 63.5 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17079,7 +18575,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 45.72 139.7 0)
+			(at 63.5 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17088,7 +18584,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 45.72 139.7 0)
+			(at 63.5 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18226,80 +19722,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 171.45 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ad0aff9-e6ef-4ba3-8d1d-5686c4124d8f")
-		(property "Reference" "Q6"
-			(at 171.45 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 171.45 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 173.355 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 171.45 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 171.45 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a60461a5-deb7-4d96-9ef1-4d03c2f8ff87")
-		)
-		(pin "1"
-			(uuid "1e3da0e4-d637-40ab-b3bf-8c928e3d429e")
-		)
-		(pin "3"
-			(uuid "cefab16d-0fbc-4631-a921-23d2e64c7541")
-		)
-		(instances
-			(project "Elo_112"
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 143.51 201.93 0)
 		(unit 1)
@@ -18609,80 +20031,6 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 50.8 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a333e6bf-017c-4987-9ae7-8c00368307c6")
-		(property "Reference" "Q1"
-			(at 50.8 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 50.8 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 52.705 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 50.8 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 50.8 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d621e562-5c6e-44b1-b082-dbf278f83b42")
-		)
-		(pin "1"
-			(uuid "a79a53c5-f05c-4676-9996-a145f89f91fc")
-		)
-		(pin "3"
-			(uuid "9bffcd0b-5277-45e3-b483-3db1aeb24dfa")
-		)
-		(instances
-			(project ""
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -19430,6 +20778,74 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
+		(at 238.76 50.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b936fee7-020d-499f-9a04-f7c7ffee2675")
+		(property "Reference" "R6"
+			(at 238.76 45.72 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 48.26 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a60176d3-80bd-424a-87ec-20f09a3bbc20")
+		)
+		(pin "2"
+			(uuid "eb3e672c-7e50-46f4-9963-7376d0280b13")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
 		(at 92.71 226.06 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -20136,6 +21552,146 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 176.53 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1a0b8b1-afb7-4d3d-9189-e834c88f7362")
+		(property "Reference" "R15"
+			(at 179.07 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 179.07 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 176.53 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 176.53 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 176.53 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2880ac3f-630b-41d2-81a4-6dcf8b2481eb")
+		)
+		(pin "2"
+			(uuid "1044b5a7-879e-45a3-90b9-579dda0c2cc6")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 55.88 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1dcc796-cec4-4563-acc1-daf821be9a3d")
+		(property "Reference" "R20"
+			(at 58.42 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 58.42 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 55.88 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 55.88 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3847822-ad05-4683-a94f-008b2c22d19d")
+		)
+		(pin "2"
+			(uuid "3907583b-7b7b-47a8-8053-bf6db5838a62")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 290.83 135.89 180)
 		(unit 1)
@@ -20623,6 +22179,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 219.71 148.59 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5baf567-42c7-44d5-8bde-aba255d5d256")
+		(property "Reference" "Q8"
+			(at 214.63 147.3199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 214.63 149.8599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 184.15 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 184.15 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 219.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 219.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 219.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 219.71 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "f6bfa70e-59ae-4078-8ab6-0ad58eafba6d")
+		)
+		(pin "3"
+			(uuid "ae28044e-b148-4d4a-8045-90c2147af6d4")
+		)
+		(pin "1"
+			(uuid "cef36113-68f7-401c-95a5-c9baa51d40ee")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 168.91 88.9 0)
 		(unit 1)
@@ -20700,6 +22356,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 238.76 38.1 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6d0d1fc-0c87-42ac-865d-d29b5dfa0ac3")
+		(property "Reference" "R5"
+			(at 238.76 33.02 90)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 238.76 35.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 238.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 238.76 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "66a4c95d-39b9-472e-8dcb-b6d2ae90fd42")
+		)
+		(pin "2"
+			(uuid "7a3914ab-197b-42e1-8c98-69f0a32e78d0")
+		)
+		(instances
+			(project ""
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 209.55 114.3 0)
 		(unit 1)
@@ -20771,6 +22495,106 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "D63")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:PNP")
+		(at 111.76 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce1c6f30-6792-4ea4-b403-3089460012b7")
+		(property "Reference" "Q3"
+			(at 106.68 148.5899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PNP"
+			(at 106.68 151.1299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 76.2 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 76.2 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 111.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 111.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 111.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 111.76 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "417899f4-4e76-4c88-b857-39051e0844e2")
+		)
+		(pin "3"
+			(uuid "fd557e4c-1bdf-45e9-98a5-bb40baec0dd9")
+		)
+		(pin "1"
+			(uuid "4163a10a-d74f-4a46-8416-966eef404937")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -21221,7 +23045,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 72.39 139.7 90)
+		(at 90.17 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21229,7 +23053,7 @@
 		(dnp no)
 		(uuid "d5bfaae7-d297-405e-b72c-5bc2146f1239")
 		(property "Reference" "#PWR02"
-			(at 76.2 139.7 0)
+			(at 86.36 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21238,7 +23062,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 67.818 139.7 0)
+			(at 94.742 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21246,7 +23070,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 72.39 139.7 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21255,7 +23079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 72.39 139.7 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21264,7 +23088,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 72.39 139.7 0)
+			(at 90.17 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21725,54 +23549,80 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 129.54 142.24 90)
+		(lib_id "Simulation_SPICE:PNP")
+		(at 179.07 149.86 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e0415bf5-26c3-405e-ac45-ef0eddd77841")
-		(property "Reference" "Q4"
-			(at 129.54 133.35 90)
+		(uuid "df66514a-6451-4fde-bd3c-9c233b0f7a28")
+		(property "Reference" "Q6"
+			(at 173.99 148.5899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "MMBT2222A"
-			(at 129.54 135.89 90)
+		(property "Value" "PNP"
+			(at 173.99 151.1299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 131.445 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 129.54 142.24 0)
+			(at 143.51 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 129.54 142.24 0)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 143.51 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 179.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" "PNP"
+			(at 179.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 179.07 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 179.07 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21781,18 +23631,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "b490bd7b-0f2f-4660-824d-63160569ce68")
-		)
-		(pin "1"
-			(uuid "2e9aec66-19d3-4e36-aad9-6c9287a95643")
+			(uuid "57aceaff-ac1b-4259-97f8-b097f9e43b01")
 		)
 		(pin "3"
-			(uuid "c40b2e98-4f82-4a30-9400-a1dc9b35ba78")
+			(uuid "48a7cb6d-8454-4512-8fa6-38b3af7764f7")
+		)
+		(pin "1"
+			(uuid "36c05c4f-9bd0-4a9e-9b12-28e980665f72")
 		)
 		(instances
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q4")
+					(reference "Q6")
 					(unit 1)
 				)
 			)
@@ -22439,156 +24289,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 191.77 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ecb8abfe-0d00-4f5c-844d-f9515bf0e218")
-		(property "Reference" "Q7"
-			(at 191.77 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 191.77 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 193.675 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 191.77 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 191.77 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a06b5966-6c05-42f5-a948-c77e2b731afd")
-		)
-		(pin "1"
-			(uuid "dd546af7-20a3-4e39-b7ef-e43512092f7c")
-		)
-		(pin "3"
-			(uuid "a2480fdb-c084-4307-9e3e-d3a1db9f7d1e")
-		)
-		(instances
-			(project "Elo_112"
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_BJT:MMBT2222A")
-		(at 151.13 142.24 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed537abb-bafa-47b9-b95f-6fb5e932ea5f")
-		(property "Reference" "Q5"
-			(at 151.13 133.35 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MMBT2222A"
-			(at 151.13 135.89 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 153.035 137.16 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf"
-			(at 151.13 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "600mA Ic, 40V Vce, NPN Transistor, SOT-23"
-			(at 151.13 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7eec0e0d-d242-49d9-8cfb-a404be1be9ac")
-		)
-		(pin "1"
-			(uuid "a53afcd9-993f-4bca-b9c5-6fb5aa0f10ee")
-		)
-		(pin "3"
-			(uuid "2e5a09dd-e3bf-45b6-ba13-5e16f88381fc")
-		)
-		(instances
-			(project "Elo_112"
-				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
-					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
-		(at 166.37 139.7 90)
+		(at 184.15 149.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22596,7 +24298,7 @@
 		(dnp no)
 		(uuid "f01b2fd6-5577-406d-bfc3-b4e907860e0d")
 		(property "Reference" "#PWR06"
-			(at 170.18 139.7 0)
+			(at 180.34 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22605,7 +24307,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 161.798 139.7 0)
+			(at 188.722 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22613,7 +24315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 139.7 0)
+			(at 184.15 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22622,7 +24324,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 139.7 0)
+			(at 184.15 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22631,7 +24333,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 166.37 139.7 0)
+			(at 184.15 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22793,6 +24495,76 @@
 			(project "Elo_112"
 				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
 					(reference "R4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 82.55 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbfe8b63-5794-4258-bd6d-1dffece5045f")
+		(property "Reference" "R19"
+			(at 85.09 140.9699 0)
+			(effects
+				(font
+					(size 1.016 1.016)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_Small"
+			(at 85.09 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 82.55 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 82.55 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d59fa5d7-dccc-4203-90cf-889c63fb39da")
+		)
+		(pin "2"
+			(uuid "681a04b6-118b-46bd-b3d5-45bb9b88470c")
+		)
+		(instances
+			(project "Elo_112"
+				(path "/45db5b9e-42a3-49fe-82d6-3533fbf89ad8"
+					(reference "R19")
 					(unit 1)
 				)
 			)
