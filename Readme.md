@@ -1,7 +1,7 @@
 
 # STM32 8×8 LED Matrix Driver
 
-**Team Name:** ?
+
 
 ## AIM
 To design a custom PCB that drives an 8×8 LED matrix (64 LEDs) using an 
