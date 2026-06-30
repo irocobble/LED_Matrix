@@ -5459,6 +5459,17 @@
 		)
 		(uuid "178516ce-af33-4780-a79d-b164272af099")
 	)
+	(text "3] The LM1117-ADJ is used but is LM1117 3.3 with the correct \nschematic it will be updated in the datasheet for further use"
+		(exclude_from_sim no)
+		(at 296.926 198.12 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left)
+		)
+		(uuid "188c67a3-01eb-4966-afba-29ad42be675d")
+	)
 	(text "Buttons_STM32"
 		(exclude_from_sim no)
 		(at 242.316 169.164 0)
@@ -7878,7 +7889,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 81.28) (xy 325.12 81.28)
+			(xy 313.69 81.28) (xy 325.12 81.28)
 		)
 		(stroke
 			(width 0)
@@ -8518,7 +8529,7 @@
 	)
 	(wire
 		(pts
-			(xy 316.23 83.82) (xy 325.12 83.82)
+			(xy 313.69 83.82) (xy 325.12 83.82)
 		)
 		(stroke
 			(width 0)
@@ -10576,7 +10587,7 @@
 		)
 		(uuid "12ae409c-249b-4bf2-a340-4f99bbc1a253")
 	)
-	(label "Xtal_in"
+	(label "Xtal_in_2"
 		(at 125.73 247.65 0)
 		(effects
 			(font
@@ -10626,7 +10637,7 @@
 		)
 		(uuid "246e710f-7827-4580-8b94-da53eca95a74")
 	)
-	(label "Xtal_in"
+	(label "Xtal_in_1"
 		(at 194.31 173.99 0)
 		(effects
 			(font
@@ -10716,8 +10727,8 @@
 		)
 		(uuid "5f25f373-e8df-40af-8547-45d9cb0edfab")
 	)
-	(label "Xtal_out"
-		(at 316.23 83.82 0)
+	(label "Xtal_out_2"
+		(at 313.69 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10816,7 +10827,7 @@
 		)
 		(uuid "a64ae05b-0060-4144-933b-8d13ff600d3f")
 	)
-	(label "Xtal_out"
+	(label "Xtal_out_1"
 		(at 194.31 185.42 0)
 		(effects
 			(font
@@ -10826,8 +10837,8 @@
 		)
 		(uuid "a7f6a050-aaf4-4a14-99e4-30ab8e9a690e")
 	)
-	(label "Xtal_in"
-		(at 316.23 81.28 0)
+	(label "Xtal_in_2"
+		(at 313.69 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10926,7 +10937,7 @@
 		)
 		(uuid "ca93c090-f6d2-4145-8273-a4b80685725b")
 	)
-	(label "Xtal_in"
+	(label "Xtal_in_1"
 		(at 157.48 257.81 0)
 		(effects
 			(font
@@ -10946,7 +10957,7 @@
 		)
 		(uuid "d18e326e-96b2-4494-b3fb-cff421a0c68f")
 	)
-	(label "Xtal_out"
+	(label "Xtal_out_2"
 		(at 125.73 259.08 0)
 		(effects
 			(font
@@ -11016,7 +11027,7 @@
 		)
 		(uuid "f73890fa-51da-4269-97d4-4bf02d3f3e33")
 	)
-	(label "Xtal_out"
+	(label "Xtal_out_1"
 		(at 157.48 262.89 0)
 		(effects
 			(font
@@ -12245,7 +12256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 107.95 264.16 0)
 			(effects
 				(font
@@ -13141,7 +13152,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 170.18 185.42 0)
 			(effects
 				(font
@@ -13294,7 +13305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 95.25 264.16 0)
 			(effects
 				(font
@@ -17360,7 +17371,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 185.42 185.42 0)
 			(effects
 				(font
@@ -20483,7 +20494,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "15pF"
 			(at 166.37 191.7762 0)
 			(effects
 				(font
@@ -20492,7 +20503,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 163.83 190.5 0)
 			(effects
 				(font
@@ -20696,7 +20707,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "15pF"
 			(at 179.07 191.7762 0)
 			(effects
 				(font
@@ -20705,7 +20716,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 176.53 190.5 0)
 			(effects
 				(font
@@ -21186,7 +21197,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm"
 			(at 101.6 259.08 0)
 			(effects
 				(font
@@ -21552,7 +21563,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 116.84 259.08 0)
 			(effects
 				(font
